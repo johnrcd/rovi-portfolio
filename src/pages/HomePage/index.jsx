@@ -1,4 +1,5 @@
 import MainNavigationBar from "../../components/MainNavigationBar";
+import { Outlet, Link } from "react-router-dom";
 
 function HomePage(){
     return(
@@ -15,7 +16,8 @@ function HomePage(){
                 </p>
             </div>
             <div>
-                <p>See some of my stuff.</p>
+                <p>Interested in seeing some of my work?</p>
+                <Link to="/projects">Check it out here.</Link>
             </div>
         </>
     )
