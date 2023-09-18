@@ -4,7 +4,19 @@ function HomePage(){
     return(
         <>
             <MainNavigationBar />
-            <p>function HomePage</p>
+            <div>
+                <p>Hi, my name is</p>
+                <h1>Rovi Decena</h1>
+                <h2>I write code for apps, websites, and games.</h2>
+                <h3>Also I make music, sometimes.</h3>
+                <p>
+                    Currently, I'm taking the Business Information Technology 
+                    course at Red River Polytech.
+                </p>
+            </div>
+            <div>
+                <p>See some of my stuff.</p>
+            </div>
         </>
     )
 }
