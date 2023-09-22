@@ -1,0 +1,63 @@
+{
+    "projects" : [
+        {
+            "name" : "Example Project",
+            "cover_image" : "images/projects/example_project_cover.png",
+            "description" : "This is intended to describe the project; if it's a game, what is the game about? If it's a website, what is the website for? In this example, I'm just adding filler text.",
+            "tags" : [
+                "Insert",
+                "Technologies",
+                "Used",
+                "Here",
+                "React",
+                "Unity"
+            ],
+            "link": "/exampleProject"
+        },
+        {
+            "name" : "Monospace",
+            "cover_image" : "images/projects/insert_cover_image.png",
+            "description" : "2D platformer about a mouse trying to return home. Solo project created over the course of five months.",
+            "tags" : [
+                "Unity",
+                "C#",
+                "PlasticSCM"
+            ],
+            "link": "/monospace"
+        },
+        {
+            "name" : "Instalocked Inc.",
+            "cover_image" : "images/projects/insert_cover_image.png",
+            "description" : "A simple web app in jest of a specific type of Valorant player. Originally created using vanilla HTML/CSS/JS, redone to use React.",
+            "tags" : [
+                "React",
+                "HTML",
+                "CSS",
+                "CRA"
+            ],
+            "link": "/instalocked_inc"
+        },
+        {
+            "name" : "Webpage from Image Mockup",
+            "cover_image" : "images/projects/insert_cover_image.png",
+            "description" : "Static webpage built to match an existing image mockup as close as possible.",
+            "tags" : [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "link": "/instalocked_inc"
+        },
+        {
+            "name" : "Arcfest",
+            "cover_image" : "images/projects/insert_cover_image.png",
+            "description" : "Fast-paced one-versus-one brawler where you fight to knock someone out of a quick closing zone.",
+            "tags" : [
+                "Unity",
+                "C#",
+                "PlasticSCM"
+            ],
+            "link": "/monospace"
+        }
+    ]
+}
