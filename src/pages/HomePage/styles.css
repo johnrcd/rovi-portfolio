@@ -1,0 +1,47 @@
+p, h1, h2, h3, a, Link, link{
+    /* default text styling */
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.titleCardWrapper{
+    /*
+     * wrapper idea taken from 
+     * https://stackoverflow.com/a/48030340
+     * except i used a hack to get min-height to stop showing the scroll-bar
+     */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+}
+.titleCard{
+    max-width: 960px;
+    margin: auto;
+}
+.titleCard .main{
+    float: left;
+    width: 50%;
+}
+
+    .titleCard .main h3{
+        color:dimgrey;
+    }
+
+.titleCard .bio{
+    float: right;
+    width: 50%;
+}
+
+.titleCard .showcase{
+    max-width: 540px;
+    margin: auto;
+    float: none;
+    clear: both;
+}
+
+    .titleCard .showcase p{
+        text-align: center;
+    }
