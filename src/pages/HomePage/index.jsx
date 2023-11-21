@@ -6,32 +6,30 @@ function HomePage(){
     return(
         <>
             <MainNavigationBar />
-            <div className="titleCardWrapper">
-            <section className="titleCard">
-                <article className="main">
-                    <p>Hey, my name is</p>
-                    <h1>Rovi Decena</h1>
-                    <h2>I write code for apps, websites, and games.</h2>
-                    <h3>Also I make music, sometimes.</h3>
-                </article>
-                <article className="bio">
+            <div>
+                <div className="sticky_note_cyan sticky_note">
+                    <h2>Hey! I'm Rovi Decena.</h2>
+                    <hr />
+                    <p>I write code for apps, website, and games.</p>
+                    <p>Also I make music, sometimes.</p>
+                </div>
+                <div className="sticky_note_cyan sticky_note">
+                    <h2>about_me.txt</h2>
+                    <hr/>
                     <p>
-                        I'm a software developer with a focus on application
-                        and game development. I first got into programming
-                        through an Interactive Digital Media program.
+                        My entryway into programming began with the Interactive Digital Media program in my high school, where I tinkered in JavaScript and Unity to create small games. Eventually, I found myself working on projects on my own, and then I before I knew it, I was hooked.
                     </p>
-                    <br/>
+                    <br />
                     <p>
-                        Currently, I'm taking the Business Information
-                        Technology program over at Red River College
-                        Polytechic.
+                        Nowadays, my programming is a lot more general. I'm currently in the Business Information Technology program at Red River College Polytechnic, where I'm learning about the fundamentals of IT and software development.
                     </p>
-                </article>
-                <article className="showcase">
-                    <p>Interested in seeing some of my work?</p>
-                    <Link to="/projects">Check it out here.</Link>
-                </article>
-            </section>
+                </div>
+                <div className="sticky_note_cyan sticky_note">
+                    <h2>more info</h2>
+                    <hr/>
+                    <p>If you're interested in seeing some of the work I've done,</p>
+                    <Link to="/projects">Check it out here!</Link>
+                </div>
             </div>
         </>
     )
