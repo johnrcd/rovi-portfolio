@@ -6,12 +6,11 @@ function MainNavigationBar(){
         <>
             <nav className="mainNavigationBar">
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/debug">Debug</Link></li>
-                    <li><Link to="/projects">Projects</Link></li>
-                    <li><Link to="/archive">Archive</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-
+                    <li><Link to="/">home</Link></li>
+                    <li><Link to="/debug">debug</Link></li>
+                    <li><Link to="/projects">projects</Link></li>
+                    <li><Link to="/archive">archive</Link></li>
+                    <li><Link to="/contact">contact</Link></li>
                 </ul>
             </nav>
             <Outlet />

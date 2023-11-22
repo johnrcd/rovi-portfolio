@@ -265,9 +265,11 @@ sup {
 /* Links */
 a {
     color: var(--color-link);
-    display: inline-block;
+    display: inline;
     font-weight: bold;
     text-decoration: underline;
+    border: 0;
+    margin: 0;
 }
 
 a:active {

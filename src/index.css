@@ -1,7 +1,8 @@
 @import "mvp.css"; 
 
 #root{
-    max-width: 34em;
+    max-width: 75ch;
+    font-size: 110%;
     margin: auto;
 }
 
@@ -49,6 +50,12 @@
     width: calc(100% - 10px);
     margin: 7px auto;
     padding: 0;
+}
+
+.sticky_note p .quiet_text,
+.sticky_note a .quiet_text{
+    /* assumes that there is no other styling besides font-related stuff */
+    opacity: 0%;
 }
 
 .sticky_note_cyan {
