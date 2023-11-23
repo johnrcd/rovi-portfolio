@@ -10,7 +10,15 @@
  */
 .first_window .inner_section{
     padding-top: calc(35vh - 30px);
+    animation: fadeInAnimation 1s linear;
 }
+
+@keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    35% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
 
 .first_window h1{
     font-size: 3.5em;
