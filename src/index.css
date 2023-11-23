@@ -43,7 +43,27 @@ p, a{
  */
 .window_content{
     min-height: 100vh;
+    position: relative;
 }
+
+.window_content div{
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.bottom_window_content{
+    min-height: 100vh;
+    position: relative;
+}
+.bottom_window_content div{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
 /* STICKY NOTES */
 
 .sticky_note{
@@ -67,7 +87,7 @@ p, a{
      */
     width: calc(100% - 10px);
 }
-.sticky_note hr{
+hr{
     border-color: rgb(49, 66, 66);
     border-top: 1px solid rgb(27, 42, 70);
     width: calc(100% - 10px);

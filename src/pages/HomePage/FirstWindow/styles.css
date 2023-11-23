@@ -10,13 +10,25 @@
  */
 .first_window .inner_section{
     padding-top: calc(35vh - 30px);
-    animation: fadeInAnimation 1s linear;
+    animation: fadeInAnimation 650ms linear;
 }
 
 @keyframes fadeInAnimation {
-    0% { opacity: 0; }
-    35% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+        -ms-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    35% {
+        opacity: 0;
+        -ms-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
   
 
