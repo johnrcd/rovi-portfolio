@@ -39,6 +39,20 @@
     font-size: 1.5em;
 }
 
+.down_arrow {
+    animation: fadeInAnimation 1500ms linear, MoveUpDown 2s ease-in-out infinite;
+    margin-top: 30vh;
+}
+  
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
 /* fix to get the main section to line up correctly, bruh this stinks */
 @media screen and (max-width:  75ch),
        screen and (max-height: 480px)  {
@@ -50,5 +64,9 @@
     }
     .first_window h2, h3, h4{
         font-size: 1.25em;
+    }
+    .down_arrow {
+        animation: MoveUpDown 2s ease-in-out infinite;
+        margin-top: 20vh;
     }
 }

@@ -9,6 +9,7 @@ export default function FirstWindow(){
                 <h3>I write code for apps, websites, and games.</h3>
                 <h3 className="quiet_text">Also, I make music sometimes.</h3>
             </div>
+            <h4 className="center_text down_arrow">v</h4>
         </div>
     );
 }

@@ -6,3 +6,9 @@
 .mainNavigationBar ul{
     margin: auto;
 }
+
+.mainNavigationBar ul li a{
+    font-style: normal;
+    text-decoration: none;
+    color: var(--color-text-secondary)
+}
