@@ -58,15 +58,19 @@
     opacity: 0%;
 }
 
+/*
+ * colors generated with
+ * https://coolors.co/gradient-maker
+ */
 .sticky_note_cyan {
-    background-color: rgb(14, 16, 21);
-    border-color: rgb(27, 42, 70);
-}
+    /* background */
+    background: hsla(222, 20%, 13%, 1);
+    background: linear-gradient(45deg, hsla(222, 20%, 13%, 1) 0%, hsla(223, 20%, 7%, 1) 100%);
+    background: -moz-linear-gradient(45deg, hsla(222, 20%, 13%, 1) 0%, hsla(223, 20%, 7%, 1) 100%);
+    background: -webkit-linear-gradient(45deg, hsla(222, 20%, 13%, 1) 0%, hsla(223, 20%, 7%, 1) 100%);
+    
 
-.sticky_note_blue {
-    background-color: rgb(14, 21, 21);
-    border-color: rgb(49, 66, 66);
-    border: 2px solid rgb(49, 66, 66);
-    border-top: 10px solid rgb(49, 66, 66);
-    border-radius: 5px;
+    /* border */
+    border-color: rgb(34, 46, 87);
+    /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1F3151", endColorstr="#1B2A46", GradientType=1 ); */
 }
