@@ -1,0 +1,34 @@
+.first_window{
+    position: relative;
+    min-height: 100vh;
+    padding: auto;
+    text-align: center;
+}
+/*
+ * this whole centering screen thing is giving me a bit of a headache...
+ * i just want it to look roughly centered, i don't care about exact
+ */
+.first_window .inner_section{
+    padding-top: calc(35vh - 30px);
+}
+
+.first_window h1{
+    font-size: 3.5em;
+}
+.first_window h2, h3, h4{
+    font-size: 1.5em;
+}
+
+/* fix to get the main section to line up correctly, bruh this stinks */
+@media screen and (max-width:  75ch),
+       screen and (max-height: 480px)  {
+    .first_window .inner_section{
+        padding-top: calc(28vh - 30px);
+    }
+    .first_window h1{
+        font-size: 2.5em;
+    }
+    .first_window h2, h3, h4{
+        font-size: 1.25em;
+    }
+}
