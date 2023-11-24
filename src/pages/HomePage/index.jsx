@@ -2,13 +2,15 @@ import MainNavigationBar from "../../components/MainNavigationBar";
 import { Outlet, Link } from "react-router-dom";
 import Footer from "../../components/Footer";
 import FirstWindow from "./FirstWindow";
+import "./styles.css";
 
 function HomePage(){
     return(
-        <>
-            <MainNavigationBar />
-            {/* TO-DO: make this it's own component*/}
-            <FirstWindow />
+        <div className="home_page">
+            <div>
+                <MainNavigationBar />
+                <FirstWindow />
+            </div>
             <div className="window_content">
                 <div>
                     <h2>about me</h2>
@@ -35,15 +37,16 @@ function HomePage(){
                     <h2>contact</h2>
                     <hr/>
                     {/* funky hack because inline-block auto-adds a space betwene elements */}
-                    <p>johnrcd.ar@gmail.com for general inquries</p>
-                    <p>johnrcd.music@gmail.com for music-specific</p>
+                    <p>
+                        I can be reached at johnrcd.ar@gmail.com for any inquries. Alternatively, you can use johnrcd.music@gmail.com if it's music specific.
+                    </p>
                     <br/>
                     <p>You can find me online at:</p>
                     <p>twitter:<a href="https://twitter.com/john_rcd">john_rcd</a></p>
                     <Footer />
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

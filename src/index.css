@@ -1,8 +1,8 @@
 @import "mvp.css"; 
 
 #root{
-    max-width: 75ch;
-    font-size: 110%;
+    max-width: 70ch;
+    font-size: 112.5%;
     margin: auto;
 }
 
@@ -44,6 +44,7 @@ p, a{
 .window_content{
     min-height: 100vh;
     position: relative;
+    scroll-snap-align: start;
 }
 
 .window_content div{
@@ -57,6 +58,8 @@ p, a{
 .bottom_window_content{
     min-height: 100vh;
     position: relative;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
 }
 .bottom_window_content div{
     position: absolute;
@@ -115,4 +118,13 @@ hr{
     /* border */
     border-color: rgb(34, 46, 87);
     /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1F3151", endColorstr="#1B2A46", GradientType=1 ); */
+}
+
+/* fix to get the main section to line up correctly, bruh this stinks */
+@media screen and (max-width:  75ch),
+       screen and (max-height: 480px)  {
+    h1, h2, h3, h4, p, a{
+        margin: 20px;
+        white-space: normal;
+    }
 }
