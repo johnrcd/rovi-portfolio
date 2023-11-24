@@ -7,8 +7,19 @@
     margin: auto;
 }
 
+.mainNavigationBar ul li{
+    margin: 0;
+    padding: 0;
+}
+
 .mainNavigationBar ul li a{
     font-style: normal;
     text-decoration: none;
-    color: var(--color-text-secondary)
+    color: var(--color-text-secondary);
+    opacity: 0.6;
+}
+
+.mainNavigationBar ul li a:hover{
+    color:var(--color-text-secondary);
+    opacity:0.85;
 }

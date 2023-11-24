@@ -1,0 +1,18 @@
+/*
+ * had to add home_page_content because mainNavigationBar was inheriting the
+ * styles for some reason super gross bruh
+ */
+.home_page ul.home_page_content{
+    margin: 0;
+    padding: 0;
+}
+.home_page ul.home_page_content li{
+    width: 100%;
+    margin: 25vh 0 0 0;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+.home_page ul.home_page_content li:first-child{
+    margin: 0;
+}

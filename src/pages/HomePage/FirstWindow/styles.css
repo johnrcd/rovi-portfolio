@@ -9,8 +9,8 @@
  * i just want it to look roughly centered, i don't care about exact
  */
 .first_window .inner_section{
-    padding-top: calc(35vh - 30px);
-    animation: fadeInAnimation 650ms linear;
+    padding-top: calc(35vh);
+    animation: fadeInAnimation 850ms ease-in-out;
 }
 
 @keyframes fadeInAnimation {
@@ -21,8 +21,8 @@
     }
     35% {
         opacity: 0;
-        -ms-transform: translateY(5px);
-        transform: translateY(5px);
+        -ms-transform: translateY(10px);
+        transform: translateY(10px);
     }
     100% {
         opacity: 1;

@@ -11,8 +11,8 @@ function HomePage(){
                 <MainNavigationBar />
                 <FirstWindow />
             </div>
-            <div className="window_content">
-                <div>
+            <ul className="home_page_content">
+                <li>
                     <h2>about me</h2>
                     <hr/>
                     <p>
@@ -22,18 +22,14 @@ function HomePage(){
                     <p>
                         Nowadays, my programming is significantly less game-oriented. I'm currently in the Business Information Technology program at Red River College Polytechnic, where I'm learning about the fundamentals of IT and software development.
                     </p>
-                </div>
-            </div>
-            <div className="window_content">
-                <div>
+                </li>
+                <li>
                     <h2>work</h2>
                     <hr/>
                     <p>If you're interested in seeing some of the work I've done,</p>
                     <Link to="/projects">Check it out here!</Link>
-                </div>
-            </div>
-            <div className="bottom_window_content">
-                <div>
+                </li>
+                <li>
                     <h2>contact</h2>
                     <hr/>
                     {/* funky hack because inline-block auto-adds a space betwene elements */}
@@ -44,8 +40,8 @@ function HomePage(){
                     <p>You can find me online at:</p>
                     <p>twitter:<a href="https://twitter.com/john_rcd">john_rcd</a></p>
                     <Footer />
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     )
 }

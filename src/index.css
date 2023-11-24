@@ -120,11 +120,3 @@ hr{
     /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1F3151", endColorstr="#1B2A46", GradientType=1 ); */
 }
 
-/* fix to get the main section to line up correctly, bruh this stinks */
-@media screen and (max-width:  75ch),
-       screen and (max-height: 480px)  {
-    h1, h2, h3, h4, p, a{
-        margin: 20px;
-        white-space: normal;
-    }
-}
