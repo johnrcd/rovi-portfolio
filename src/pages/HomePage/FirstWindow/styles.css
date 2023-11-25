@@ -4,6 +4,14 @@
     padding: auto;
     text-align: center;
 }
+
+.first_window_h1{
+    margin: 0;
+}
+
+.first_window_h3{
+    margin: 0;
+}
 /*
  * this whole centering screen thing is giving me a bit of a headache...
  * i just want it to look roughly centered, i don't care about exact
