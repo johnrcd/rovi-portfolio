@@ -4,8 +4,8 @@ import "./styles.css";
 function MainNavigationBar(){
     return(
         <>
-            <nav className="mainNavigationBar">
-                <ul>
+            <nav className="main_navigation_bar">
+                <ul className="main_navigation_bar_list">
                     <li><Link to="/">home</Link></li>
                     <li><Link to="/debug">debug</Link></li>
                     <li><Link to="/projects">projects</Link></li>
