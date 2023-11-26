@@ -22,4 +22,5 @@
 .main_navigation_bar ul.main_navigation_bar_list li a:hover{
     color:var(--color-text-secondary);
     opacity:0.85;
+    /* */
 }
