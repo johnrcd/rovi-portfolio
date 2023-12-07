@@ -4,16 +4,13 @@ import MainNavigationBar from "../../components/MainNavigationBar";
 import Footer from "../../components/Footer";
 import FirstWindow from "./FirstWindow";
 import TechnicalSkills from "../../components/TechnicalSkills";
+import SocialMediaLinks from "../../components/SocialMediaLinks";
 import "./styles.css";
 
 import img_monospace from "/monospace_banner.png";
 import img_dictionary_page from "/dictionary_page_banner.png";
 import img_instalocked_inc from "/instalocked_inc_banner.png";
 
-import social_media_twitter from "/social_media_twitter.png";
-import social_media_linked_in from "/social_media_linked_in.png";
-import social_media_github from "/social_media_github.png";
-import social_media_youtube from "/social_media_youtube.png";
 
 function HomePage(){
 
@@ -21,7 +18,6 @@ function HomePage(){
     return(
         <div className="home_page">
             <div>
-                <MainNavigationBar />
                 <FirstWindow />
             </div>
             <ul className="home_page_content">
@@ -37,7 +33,7 @@ function HomePage(){
                     </p>
                 </li>
                 <li className="home_page_section">
-                    <h2>things i have made</h2>
+                    <h2>things i've worked on</h2>
                     <hr/>
                     <h3>Monospace</h3>
                     <a href="https://johnrcd.itch.io/monospace" className="home_page_image_link">
@@ -78,11 +74,8 @@ function HomePage(){
                     <p>
                         While I'm currently busy studying at RRC Polytech, I'm open to any inquiries, new opportunities, or just a friendly chat. Feel free to reach out to me at johnrcd.ar@gmail.com!
                     </p>
-                    <hr/>
-                    <img src={social_media_github}    alt="github logo"    />
-                    <img src={social_media_linked_in} alt="linked in logo" />
-                    <img src={social_media_twitter}   alt="twitter logo"   />
-                    <img src={social_media_youtube}   alt="youtube logo"   />
+                    <br/> <br/>
+                    <SocialMediaLinks />
                 </li>
                 <Footer />
             </ul>

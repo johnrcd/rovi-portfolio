@@ -4,5 +4,19 @@ footer{
 }
 
 footer p{
+    font-size: 0.875em;
     text-align: center;
+    color: var(--color-text-quiet);
+}
+
+footer p a{
+    color: var(--color-text-secondary);
+    text-decoration: none;
+
+    opacity: 0.6;
+    transition: 0.22s;
+}
+
+footer p a:hover{
+    opacity: 1;
 }
