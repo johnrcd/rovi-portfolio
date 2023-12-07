@@ -11,10 +11,22 @@
     margin: 50vh 0 0 0;
     list-style-type: none;
     list-style-position: outside;
+    border-color: var(--color-accent);
 }
 
 .home_page ul.home_page_content li.home_page_section:first-child{
     margin: 0;
+}
+
+.home_page ul.home_page_content a.home_page_image_link img{
+    width: calc(100% - 14px);
+    padding: 5px;
+    border: 2px solid;
+    border-top: 12px solid;
+    border-radius: 5px;
+
+    opacity: 1;
+    transition: 0;
 }
 
 .home_page ul.home_page_content li.home_page_section:last-child{

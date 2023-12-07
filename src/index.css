@@ -35,27 +35,6 @@ p, a{
     font-weight:400;
 }
 
-a{
-    opacity: 0.6;
-    transition: 0.22s;
-    color:var(--color-text-secondary);
-    font-style: normal;
-    text-decoration: none;
-}
-
-a:hover{
-    opacity: 1;
-}
-
-img{
-    width: calc(100% - 14px);
-    padding: 5px;
-    border: 2px solid;
-    border-top: 12px solid;
-    border-radius: 5px;
-
-    border-color: rgb(27, 42, 70);
-}
 /* make content take up page minimum */
 
 /*
