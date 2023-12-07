@@ -27,7 +27,7 @@ function HomePage(){
                     </p>
                     <br />
                     <p>
-                        Nowadays, my programming is significantly less game-oriented. I'm currently in the Business Information Technology program at Red River College Polytechnic, where I'm learning about the fundamentals of IT and software development.
+                        Nowadays, my programming is significantly less game-oriented. I'm currently in the Business Information Technology program at Red River College Polytechnic, where I'm learning about IT and software development.
                     </p>
                 </li>
                 <li className="home_page_section">
@@ -54,15 +54,11 @@ function HomePage(){
                 <li className="home_page_section">
                     <h2>contact</h2>
                     <hr/>
-                    {/* funky hack because inline-block auto-adds a space betwene elements */}
                     <p>
-                        I can be reached at johnrcd.ar@gmail.com for any inquries. Alternatively, you can use johnrcd.music@gmail.com if it's music specific.
+                        While I'm currently busy studying at RRC Polytech, I'm open to any inquiries, new opportunities, or just a friendly chat. Feel free to reach out to me at johnrcd.ar@gmail.com!
                     </p>
-                    <br/>
-                    <p>You can find me online at:</p>
-                    <p>twitter:<a href="https://twitter.com/john_rcd">john_rcd</a></p>
-                    <Footer />
                 </li>
+                <Footer />
             </ul>
         </div>
     )

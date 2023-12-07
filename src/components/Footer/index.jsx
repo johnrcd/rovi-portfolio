@@ -3,7 +3,10 @@ import "./styles.css";
 export default function Footer(){
     return(
         <footer>
-            <p>made with React + Vite</p>
+            <p>
+                Built with <a href="https://react.dev/">React</a> and <a href="https://vitejs.dev/">Vite</a>.
+                Styled with the help of <a href="https://andybrewer.github.io/mvp/">MVP.css</a>.
+            </p>
         </footer>
     );
 }

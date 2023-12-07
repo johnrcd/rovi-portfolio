@@ -8,11 +8,15 @@
 }
 .home_page ul.home_page_content li.home_page_section{
     width: 100%;
-    margin: 35vh 0 0 0;
+    margin: 50vh 0 0 0;
     list-style-type: none;
     list-style-position: outside;
 }
 
 .home_page ul.home_page_content li.home_page_section:first-child{
     margin: 0;
+}
+
+.home_page ul.home_page_content li.home_page_section:last-child{
+    margin-top:50vh;
 }

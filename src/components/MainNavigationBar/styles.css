@@ -11,16 +11,3 @@
     margin: 0 1ch;
     padding: 0;
 }
-
-.main_navigation_bar ul.main_navigation_bar_list li a{
-    font-style: normal;
-    text-decoration: none;
-    color: var(--color-text-secondary);
-    opacity: 0.6;
-}
-
-.main_navigation_bar ul.main_navigation_bar_list li a:hover{
-    color:var(--color-text-secondary);
-    opacity:0.85;
-    /* */
-}
