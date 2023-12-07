@@ -24,9 +24,26 @@
     border: 2px solid;
     border-top: 12px solid;
     border-radius: 5px;
+    border-color: var(--color-img-border);
 
     opacity: 1;
-    transition: 0;
+    transition: 0.25s;
+    filter: brightness(60%);
+}
+
+.home_page ul.home_page_content a.home_page_image_link img:visited{
+    filter: brightness(60%);
+    border-color: var(--color-img-border);
+}
+
+.home_page ul.home_page_content a.home_page_image_link img:hover{
+    filter: brightness(100%);
+    border-color: var(--color-img-border);
+}
+
+.home_page ul.home_page_content a.home_page_image_link img:active{
+    filter: brightness(100%);
+    border-color: var(--color-img-border);
 }
 
 .home_page ul.home_page_content li.home_page_section:last-child{
