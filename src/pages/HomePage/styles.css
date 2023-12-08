@@ -56,3 +56,10 @@
         padding: 0 5px;
     }
 }
+
+div.quiet_header_text{
+    color: var(--color-text-quiet);
+    font-size: 1em;
+    font-weight: 400;
+    display: inline;
+}
