@@ -1,10 +1,13 @@
 .down_arrow{
+    position: absolute;
     animation: fadeInAnimation 2500ms linear, MoveUpDown 2s ease-in-out infinite;
-    margin-top: 30vh;
+    text-align: center;
+    bottom: 5vh;
+    width: 100%;
 }
 
 .fade_out{
-    animation: fadeOutAnimation 650ms linear forwards, MoveUpDown 2s ease-in-out infinite;
+    animation: fadeOutAnimation 300ms linear forwards, MoveUpDown ease-in-out infinite;
 }
 
 @keyframes MoveUpDown {
@@ -22,7 +25,7 @@
         -ms-transform: translateY(5px);
         transform: translateY(5px);
     }
-    40% {
+    60% {
         opacity: 0;
         -ms-transform: translateY(5px);
         transform: translateY(5px);

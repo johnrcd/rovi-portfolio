@@ -49,3 +49,10 @@
 .home_page ul.home_page_content li.home_page_section:last-child{
     margin-top:50vh;
 }
+
+@media screen and (max-width:  75ch),
+       screen and (max-height: 480px) {
+    .home_page ul.home_page_content {
+        padding: 0 5px;
+    }
+}
