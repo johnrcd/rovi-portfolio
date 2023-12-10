@@ -20,25 +20,27 @@
     position: absolute;
     top: 50%;
     margin: 0;
-    transform: translateY(-50%);
 
     left:0;
     right:0;
     width: 100%;
-    animation: FirstWindow_fadeInAnimation 850ms ease-in-out;
+    animation: FirstWindow_fadeInAnimation 800ms ease-out forwards;
 }
 
 @keyframes FirstWindow_fadeInAnimation {
     0% {
         position: absolute;
         opacity: 0;
+        transform: translateY(-65%);
     }
     50% {
         position: absolute;
+        transform: translateY(-65%);
         opacity: 0;
     }
     100% {
         position: absolute;
+        transform: translateY(-70%);
         opacity: 1;
     }
 }

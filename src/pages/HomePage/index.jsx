@@ -42,7 +42,7 @@ function HomePage(){
                     </h2>
                     <hr/>
                     <h3>Monospace</h3>
-                    <a href="https://johnrcd.itch.io/monospace" className="home_page_image_link">
+                    <a href="https://www.youtube.com/watch?v=kcPLa2HAxqA" className="home_page_image_link">
                         <img src={img_monospace} alt="monospace game project" />
                     </a>
                     <p>
@@ -60,7 +60,7 @@ function HomePage(){
                         Website to emulate the functionality of a blogging page. Viewers can see the most recent or individual posts, while administrators can create new posts, and edit or delete existing posts. Connects to a locally-hosted database via MySQL.
                     </p>
                     <TechnicalSkills
-                        skills={["PHP", "HTML", "XAMPP", "MySQL", "phpMyAdmin"]}
+                        skills={["PHP", "HTML", "CSS", "XAMPP", "MySQL", "phpMyAdmin"]}
                     />
                     <br /> <br /> <br />
                     <h3>Instalocked Inc.</h3>
