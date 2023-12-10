@@ -68,10 +68,10 @@ function HomePage(){
                         <img src={img_instalocked_inc} alt="instalocked inc page" />
                     </a>
                     <p>
-                        Static webpage built as a joke from the game Valorant. Originally built using pure HTML/CSS, recreated with the React framework for practice.
+                        Static webpage built as a joke from the game Valorant. Originally built using pure HTML/CSS, recreated with React to help myself get familier with the framework.
                     </p>
                     <TechnicalSkills
-                        skills={["React", "CSS", "Github Pages"]}
+                        skills={["React", "CRA", "CSS", "Github Pages"]}
                     />
                 </li>
                 <li className="home_page_section">
