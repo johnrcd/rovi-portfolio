@@ -1,69 +1,124 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "mvp.css"; 
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+#root{
+    max-width: 70ch;
+    font-size: 112.5%;
+    margin: auto;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+h1, h2, h3, h4, p, a{
+    margin: 2px 0px; 
+    padding: 0;
+    /*
+     * this fixes the text from going over
+     * ... not sure why
+     */
 }
-a:hover {
-  color: #535bf2;
+h1{
+    font-size: 2em;
+    font-weight:700;
 }
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+h2{
+    font-size: 1.5em;
+    font-weight:700;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h3{
+    font-size: 1.17em;
+    font-weight:500;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+h4{
+    font-size: 1.13em;
+    font-weight:500;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+p, a{
+    font-size: 1em;
+    font-weight:400;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* make content take up page minimum */
+
+/*
+ * use for content that should be able to take up the entire height of the
+ * window, minimum
+ */
+.window_content{
+    min-height: 100vh;
+    position: relative;
+    scroll-snap-align: start;
 }
+
+.window_content div{
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.bottom_window_content{
+    min-height: 100vh;
+    position: relative;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+}
+.bottom_window_content div{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* STICKY NOTES */
+
+.sticky_note{
+    border: 2px solid;
+    border-top: 12px solid;
+    border-radius: 5px;
+    padding: 5px 10px 15px 10px;
+    margin: 20px 0;
+}
+.sticky_note h1,
+.sticky_note h2,
+.sticky_note h3,
+.sticky_note h4,
+.sticky_note p,
+.sticky_note a{
+    margin: 2px 10px; 
+    padding: 0;
+    /*
+     * this fixes the text from going over
+     * ... not sure why
+     */
+    width: calc(100% - 10px);
+}
+hr{
+    background-color: var(--color-bg-secondary);
+    border-color: rgb(49, 66, 66);
+    
+    border-top: 1px solid rgb(27, 42, 70);
+    width: calc(100% - 10px);
+    margin: 7px 0;
+    padding: 0;
+}
+
+.quiet_text{
+    /* assumes that there is no other styling besides font-related stuff */
+    opacity: 70%;
+}
+
+/*
+ * colors generated with
+ * https://coolors.co/gradient-maker
+ */
+.sticky_note_cyan {
+    /* background */
+    background: hsla(222, 20%, 13%, 1);
+    background: linear-gradient(45deg, hsla(222, 20%, 13%, 1) 0%, hsla(223, 20%, 7%, 1) 100%);
+    background: -moz-linear-gradient(45deg, hsla(222, 20%, 13%, 1) 0%, hsla(223, 20%, 7%, 1) 100%);
+    background: -webkit-linear-gradient(45deg, hsla(222, 20%, 13%, 1) 0%, hsla(223, 20%, 7%, 1) 100%);
+    
+
+    /* border */
+    border-color: rgb(34, 46, 87);
+    /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1F3151", endColorstr="#1B2A46", GradientType=1 ); */
+}
+

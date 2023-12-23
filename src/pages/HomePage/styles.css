@@ -1,0 +1,65 @@
+/*
+ * had to add home_page_content because mainNavigationBar was inheriting the
+ * styles for some reason super gross bruh
+ */
+.home_page ul.home_page_content{
+    margin: 0;
+    padding: 0;
+}
+.home_page ul.home_page_content li.home_page_section{
+    width: 100%;
+    margin: 50vh 0 0 0;
+    list-style-type: none;
+    list-style-position: outside;
+    border-color: var(--color-accent);
+}
+
+.home_page ul.home_page_content li.home_page_section:first-child{
+    margin: 0;
+}
+
+.home_page ul.home_page_content a.home_page_image_link img{
+    width: calc(100% - 14px);
+    padding: 5px;
+    border: 2px solid;
+    border-top: 12px solid;
+    border-radius: 5px;
+    border-color: var(--color-img-border);
+
+    opacity: 1;
+    transition: 0.25s;
+    filter: brightness(60%);
+}
+
+.home_page ul.home_page_content a.home_page_image_link img:visited{
+    filter: brightness(60%);
+    border-color: var(--color-img-border);
+}
+
+.home_page ul.home_page_content a.home_page_image_link img:hover{
+    filter: brightness(100%);
+    border-color: var(--color-img-border);
+}
+
+.home_page ul.home_page_content a.home_page_image_link img:active{
+    filter: brightness(100%);
+    border-color: var(--color-img-border);
+}
+
+.home_page ul.home_page_content li.home_page_section:last-child{
+    margin-top:50vh;
+}
+
+@media screen and (max-width:  75ch),
+       screen and (max-height: 480px) {
+    .home_page ul.home_page_content {
+        padding: 0 5px;
+    }
+}
+
+div.quiet_header_text{
+    color: var(--color-text-quiet);
+    font-size: 1em;
+    font-weight: 400;
+    display: inline;
+}

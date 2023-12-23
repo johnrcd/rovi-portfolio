@@ -1,0 +1,27 @@
+.main_navigation_bar{
+    margin: auto;
+    margin-top: 2%;
+}
+
+.main_navigation_bar ul.main_navigation_bar_list{
+    margin: auto;
+}
+
+.main_navigation_bar ul.main_navigation_bar_list li{
+    margin: 0 1ch;
+    padding: 0;
+}
+
+.main_navigation_bar ul.main_navigation_bar_list li a.main_navigation_link{
+    opacity: 0.6;
+    transition: 0.22s;
+    color: var(--color-text-secondary);
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+.main_navigation_bar ul.main_navigation_bar_list li a.main_navigation_link:hover{
+    opacity: 1;
+}
+
