@@ -8,13 +8,10 @@ import SocialMediaLinks from "../../components/SocialMediaLinks";
 import "./styles.css";
 
 import img_monospace from "/monospace_banner.png";
-import img_dictionary_page from "/dictionary_page_banner.png";
 import img_instalocked_inc from "/instalocked_inc_banner.png";
-import img_blog_website from "/blog_website_banner.png";
+import img_valorant_lfg from "/valorant_lfg_banner.png";
 
 function HomePage(){
-
-    console.log(img_monospace);
     return(
         <div className="home_page">
             <div>
@@ -40,7 +37,19 @@ function HomePage(){
                         <div className="quiet_header_text">// </div>
                         things i've worked on
                     </h2>
-                    <hr/>
+                    <hr />
+                    <br />
+                    <h3>Valorant LFG</h3>
+                    <a href="https://www.youtube.com/watch?v=AeJm1W0gKzI" className="home_page_image_link">
+                        <img src={img_valorant_lfg} alt="Valorant LFG website homepage" />
+                    </a>
+                    <p>
+                        Website to find players to play Valorant with. Users can find other players by agent, weapon, or role preference. Additionally, users can register to add themselves to the database, providng their own Valorant details and gameplay information.
+                    </p>
+                    <TechnicalSkills
+                        skills={["Apache", "MySQL", "PHP", "git"]}
+                    />
+                    <br /> <br /> <br />
                     <h3>Monospace</h3>
                     <a href="https://www.youtube.com/watch?v=kcPLa2HAxqA" className="home_page_image_link">
                         <img src={img_monospace} alt="monospace game project" />
@@ -52,17 +61,6 @@ function HomePage(){
                         skills={["Unity", "C#", "Plastic SCM"]}
                     />
                     <br /> <br /> <br />
-                    <h3>Personal Blog Page</h3>
-                    <a href="https://codesandbox.io/p/sandbox/dictionary-page-744txs" className="home_page_image_link">
-                        <img src={img_blog_website} alt="personal_blog_page" />
-                    </a>
-                    <p>
-                        Website to emulate the functionality of a blogging page. Viewers can see the most recent or individual posts, while administrators can create new posts, and edit or delete existing posts. Connects to a locally-hosted database via MySQL.
-                    </p>
-                    <TechnicalSkills
-                        skills={["PHP", "HTML", "CSS", "XAMPP", "MySQL", "phpMyAdmin"]}
-                    />
-                    <br /> <br /> <br />
                     <h3>Instalocked Inc.</h3>
                     <a href="https://github.com/johnrcd/instalocked-react" className="home_page_image_link">
                         <img src={img_instalocked_inc} alt="instalocked inc page" />
@@ -71,7 +69,7 @@ function HomePage(){
                         Static webpage built as a joke from the game Valorant. Originally built using pure HTML/CSS, recreated with React to help myself get familier with the framework.
                     </p>
                     <TechnicalSkills
-                        skills={["React", "CRA", "CSS", "Github Pages"]}
+                        skills={["React", "CRA", "HTML", "CSS"]}
                     />
                 </li>
                 <li className="home_page_section">
