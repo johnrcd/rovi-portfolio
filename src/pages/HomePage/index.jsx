@@ -38,7 +38,6 @@ function HomePage(){
                         things i've worked on
                     </h2>
                     <hr />
-                    <br />
                     <h3>Valorant LFG</h3>
                     <a href="https://www.youtube.com/watch?v=AeJm1W0gKzI" className="home_page_image_link">
                         <img src={img_valorant_lfg} alt="Valorant LFG website homepage" />
