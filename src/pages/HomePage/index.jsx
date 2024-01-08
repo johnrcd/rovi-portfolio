@@ -20,7 +20,8 @@ function HomePage(){
             <div>
                 <FirstWindow />
             </div>
-            <ul className="home_page_content" id="anchor_about_me">
+            <div id="anchor_about_me"></div>
+            <ul className="home_page_content">
                 <li className="home_page_section">
                     <h2>about me</h2>
                     <hr/>
@@ -32,7 +33,7 @@ function HomePage(){
                         Nowadays, my programming is significantly less game-oriented. I'm currently in the Business Information Technology program at Red River College Polytechnic, where I'm learning about IT and software development.
                     </p>
                 </li>
-                <li className="home_page_section">
+                <li className="home_page_section" id="anchor_projects">
                     <h2>things i've worked on</h2>
                     <hr/>
                     <h3>Monospace</h3>
@@ -68,7 +69,7 @@ function HomePage(){
                         skills={["React", "CSS", "Github Pages"]}
                     />
                 </li>
-                <li className="home_page_section">
+                <li className="home_page_section" id="anchor_contact">
                     <h2>contact</h2>
                     <hr/>
                     <p>
