@@ -20,7 +20,7 @@ function HomePage(){
             <div>
                 <FirstWindow />
             </div>
-            <ul className="home_page_content">
+            <ul className="home_page_content" id="anchor_about_me">
                 <li className="home_page_section">
                     <h2>about me</h2>
                     <hr/>

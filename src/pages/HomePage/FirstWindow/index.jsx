@@ -5,6 +5,7 @@ import ScrollDownArrow from "../ScrollDownArrow";
 export default function FirstWindow(){
     return(
         <div className="first_window">
+            <MainNavigationBar />
             <div className="inner_section">
                 <h1 className="first_window_h1">Hey, I'm Rovi Decena.</h1>
                 <h3 className="first_window_h3">I write code for apps, websites, and games.</h3>
