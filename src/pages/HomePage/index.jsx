@@ -8,13 +8,10 @@ import SocialMediaLinks from "../../components/SocialMediaLinks";
 import "./styles.css";
 
 import img_monospace from "/monospace_banner.png";
-import img_dictionary_page from "/dictionary_page_banner.png";
 import img_instalocked_inc from "/instalocked_inc_banner.png";
-
+import img_valorant_lfg from "/valorant_lfg_banner.png";
 
 function HomePage(){
-
-    console.log(img_monospace);
     return(
         <div className="home_page">
             <div>
@@ -23,7 +20,10 @@ function HomePage(){
             <div id="anchor_about_me"></div>
             <ul className="home_page_content">
                 <li className="home_page_section">
-                    <h2>about me</h2>
+                    <h2>
+                        <div className="quiet_header_text">// </div>
+                        about me
+                        </h2>
                     <hr/>
                     <p>
                         I'm a programmer with a passion for application and game development. My interest began through the Interactive Digital Media program offered at my high school, where my first projects were games built in JavaScript. I started to tinker around with assignments to see how they worked, made some games of my own, and before I knew it, I was hooked.
@@ -33,29 +33,32 @@ function HomePage(){
                         Nowadays, my programming is significantly less game-oriented. I'm currently in the Business Information Technology program at Red River College Polytechnic, where I'm learning about IT and software development.
                     </p>
                 </li>
-                <li className="home_page_section" id="anchor_projects">
-                    <h2>things i've worked on</h2>
-                    <hr/>
+                <li className="home_page_section">
+                    <h2>
+                        <div className="quiet_header_text">// </div>
+                        things i've worked on
+                    </h2>
+                    <hr />
+                    <h3>Valorant LFG</h3>
+                    <a href="https://www.youtube.com/watch?v=AeJm1W0gKzI" className="home_page_image_link">
+                        <img src={img_valorant_lfg} alt="Valorant LFG website homepage" />
+                    </a>
+                    <p>
+                        Website to find players to play Valorant with. Users can find other players by agent, weapon, or role preference. Additionally, users can register to add themselves to the database, providng their own Valorant details and gameplay information.
+                    </p>
+                    <TechnicalSkills
+                        skills={["Apache", "MySQL", "PHP", "git"]}
+                    />
+                    <br /> <br /> <br />
                     <h3>Monospace</h3>
-                    <a href="https://johnrcd.itch.io/monospace" className="home_page_image_link">
+                    <a href="https://www.youtube.com/watch?v=kcPLa2HAxqA" className="home_page_image_link">
                         <img src={img_monospace} alt="monospace game project" />
                     </a>
                     <p>
-                        A 2D platformer about a mouse trying to get home. Developed over a period of five months, released for Slow Jam Winnipeg 2022.
+                        A 2D platformer about a mouse trying to get home. This project was my first attempt to create a fully realized game, rather than just another prototype or a proof-of-concept. Developed over a period of five months, released for Slow Jam Winnipeg 2022.
                     </p>
                     <TechnicalSkills
                         skills={["Unity", "C#", "Plastic SCM"]}
-                    />
-                    <br /> <br /> <br />
-                    <h3>Dictionary Page</h3>
-                    <a href="https://codesandbox.io/p/sandbox/dictionary-page-744txs" className="home_page_image_link">
-                        <img src={img_dictionary_page} alt="dictionary website" />
-                    </a>
-                    <p>
-                        Website for interfacing and retrieving definitions from the Free Dictionary API.
-                    </p>
-                    <TechnicalSkills
-                        skills={["React", "AJAX", "git"]}
                     />
                     <br /> <br /> <br />
                     <h3>Instalocked Inc.</h3>
@@ -63,10 +66,10 @@ function HomePage(){
                         <img src={img_instalocked_inc} alt="instalocked inc page" />
                     </a>
                     <p>
-                        Static webpage built as a joke from the game Valorant. Originally built using pure HTML/CSS, recreated with the React framework for practice.
+                        Static webpage built as a joke from the game Valorant. Originally built using pure HTML/CSS, recreated with React to help myself get familier with the framework.
                     </p>
                     <TechnicalSkills
-                        skills={["React", "CSS", "Github Pages"]}
+                        skills={["React", "CRA", "HTML", "CSS"]}
                     />
                 </li>
                 <li className="home_page_section" id="anchor_contact">
